@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    
+    <link rel="stylesheet" type="text/css" href="src/index.css"></script>
+    <title>E-Store</title>
   </head>
+
   <body>
-    <div id="root"></div>
+    <div id="root" class="root">
+
+
+        <div class="head__container">
+
+            <div class="head__nav">
+
+              <img class="icon__carrito" src="src/assets/icons/vector_carrito.png">
+              <p class="nav__items e_store">E-Store</p>
+              <p class="nav__items">Ofertas</p>
+              <p class="nav__items">Catergorías</p>
+              <p class="nav__items">Delivery</p>
+
+            </div>
+
+            <div class="head__find">
+
+              <input type="text" class="input__find" placeholder="Buscar productos..."> <img src="src/assets/icons/vector_lupa.png" class="icon__lupa">
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
     <script type="module" src="/src/main.jsx"></script>
+    
   </body>
 </html>

@@ -13,6 +13,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
 }
 
 a {
@@ -55,6 +56,64 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+/*---------------------------------------------*/
+
+.root{
+  width: 100%;
+  
+}
+
+.head__container{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+
+
+}
+
+.head__nav{
+  display: flex;
+  align-items: center;
+  
+}
+
+.nav__items{
+  padding: 20px;
+}
+
+.e_store{
+  color: green;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.icon__carrito{
+  width: 28px;
+  height: 28px;
+}
+
+.head__find{
+  border: none;
+  padding: 6px;
+  border-radius: 20px;
+  background-color: rgb(240, 240, 240);
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  margin-right: 50px;
+}
+
+.input__find{
+  border: none;
+  background-color: rgb(240, 240, 240);
+  width: 200px;
+
+}
+
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
