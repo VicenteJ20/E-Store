@@ -1,4 +1,4 @@
-import { cartIcon } from "../../assets"
+import { cartIcon, profile, shoppingCart } from "../../assets"
 import { navLinks } from "../../constants"
 
 
@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav>
         <div>
             <img src={`${cartIcon}`} alt="cartIcon" />
-            <span>E-Store   </span>
+            <span>E-Store</span>
         </div>
         <ul>
             {navLinks.map((nav, index) => (
@@ -20,6 +20,20 @@ const Navbar = () => {
                 </li>
             ))}
         </ul>
+        <div>
+            <input
+            type="text"
+            placeholder="Search"
+            />
+        </div>
+        <div>
+            <img src={`${profile}`} alt="profileIcon" />
+            <span>Cuenta</span>
+        </div>
+        <div>
+            <img src={`${shoppingCart}`} alt="shoppingCart" />
+            <span>Carrito</span>
+        </div>
     </nav>
   )
 }
