@@ -1,7 +1,6 @@
 import { cartIcon, profile, shoppingCart } from "../../assets"
 import { navLinks } from "../../constants"
 
-
 const Navbar = () => {
   return (
     <nav className="navbar">
