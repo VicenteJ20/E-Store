@@ -1,4 +1,5 @@
 import { Navbar, } from './components'
+import './components/Navbar/navbar.scss'
 
 function App() {
 	return (

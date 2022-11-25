@@ -4,7 +4,7 @@ import { navLinks } from "../../constants"
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="navbar">
         <div>
             <img src={`${cartIcon}`} alt="cartIcon" />
             <span>E-Store</span>
