@@ -1,9 +1,11 @@
 import React from 'react'
+import { Carousel } from './components/Carousel/carousel'
+import './Styles/App.scss'
 
 function App() {
 	return (
 		<div className='App'>
-			<h1>Hola</h1>
+			<Carousel />
 		</div>
 	)
 }
