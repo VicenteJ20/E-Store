@@ -22,6 +22,7 @@ const Carousel = () => {
 	const btnClick = (id) => {
 		setActive(id)
 	}
+	
 
 	return (
 		<div className='Carousel'>
