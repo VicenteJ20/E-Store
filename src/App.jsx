@@ -4,9 +4,11 @@ import './Styles/App.scss'
 
 function App() {
 	return (
-		<div className='App'>
-			<Carousel />
-		</div>
+		<>
+			<div className='App'>
+		 		<Carousel />
+			</div>
+		</>
 	)
 }
 

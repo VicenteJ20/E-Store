@@ -5,21 +5,21 @@ import { useState } from 'react'
 import Imgs from '../../json/CarouselImgs.json'
 import { Image } from './Image'
 
-const DotBtn = ({ id, active }) => {
- 
-  return (
-    <li className={`dot ${active ? 'active' : ''}`}>{id}</li>
-  )
-}
-
-
-export const Carousel = () => {
+const DotBtn = ({ id, index }) => {
   const [active, setActive] = useState(false)
 
   const btnClick = () => {
     setActive(!active)
   }
   
+  return (
+    <li className={`dot ${active && id !== index ? '' : ''}`} onClick={btnClick}></li>
+  )
+}
+
+
+export const Carousel = () => {
+
   return (
     <div className='Carousel'>
       <div className='CarouselImgs'>
@@ -29,7 +29,7 @@ export const Carousel = () => {
       </div>
       <ul className='CarouselDots'>
         {
-          Imgs.map(x => <DotBtn key={x.Id} id={x.Id} active={active} onClick={btnClick} />)
+          Imgs.map((x, index) => <DotBtn key={x.Id} id={x.Id} index={index} />)
         }
       </ul>
     </div>
