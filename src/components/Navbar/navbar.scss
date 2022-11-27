@@ -1,0 +1,119 @@
+.navContainer{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__left{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+
+.navbar__cartIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__cartIcon__icon{
+    margin: 0.5rem;
+}
+
+.navbar__cartIcon__title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #16498b
+}
+
+.navbar__rigth{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.navbar__profileIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__profileIcon__icon{
+    margin: 0.5rem;
+}
+
+.navbar__shoppingCartIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__shoppingCartIcon__icon{
+    margin: 0.5rem;
+}
+
+.navbar__icon__title{
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #5E5E5E;
+}
+
+.navbar__navlinks{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1rem;
+    display: flex;
+    align-items: center;
+    color: #5E5E5E;
+}
+
+.navbar__navitems{
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.navbar__input__wrapper{
+    position: relative;
+}
+
+.navbar__input{
+    width: 14rem;
+    height: 1.25rem;
+    background: #F7F7F7;
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+.navbar__input__icon{
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+}

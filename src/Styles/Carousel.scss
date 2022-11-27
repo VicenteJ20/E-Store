@@ -1,0 +1,50 @@
+.Carousel{
+  width: 90%;
+  max-width: 120em;
+  padding: 2em;
+  overflow: hidden;
+}
+
+.Carousel .CarouselImgs{
+  width: 300%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  transition: 0.5s all ease-in-out;
+  transform: translateX(0%);
+  gap: 0.5rem;
+}
+
+.CarouselImgs .img{
+  width: calc(100% / 3);
+  min-height: 20vh;
+  max-height: 75vh;
+  border-radius: 1rem;
+}
+
+.Carousel .CarouselDots{
+  width: 100%;
+  margin: 1em 0 0 0;
+  padding: 0.5em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.Carousel .dot{
+  width: 2em;
+  height: 2em;
+  margin: 1em 1em 0;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: red;
+  transition: 0.5s all ease;
+}
+
+.dot.active{
+  background-color: green;
+}

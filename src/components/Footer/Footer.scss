@@ -1,0 +1,44 @@
+.section1{
+    padding: 2rem;
+}
+
+.boxes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    padding: 2rem 0;
+    font-weight: 800;
+    font-family: 'Inter';
+    font-size: 1rem;
+}
+
+.box{
+    width: 25%;
+    padding-right: 2rem;
+}
+
+.description_M-Store_p{
+    text-align: justify;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.a{
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.author{
+    padding-top: 3rem;
+    font-size: 0.8rem;
+    font-family: 'Inter';
+}
+
+
+

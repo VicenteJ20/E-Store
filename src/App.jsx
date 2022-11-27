@@ -1,12 +1,21 @@
+import { Navbar } from './components'
+import './components/Navbar/navbar.scss'
 import React from 'react'
-import Navbar from './components/Navbar/Navbar'
+import Carousel from './components/Carousel/Carousel'
+import './Styles/App.scss'
 import Footer from './components/Footer/Footer'
+
 
 function App() {
 	return (
-	<>
-		<Footer />
-	</>	
+		<>
+			<div className='App'>
+			<div className='navContainer'><Navbar /></div>
+				<Carousel />
+			</div>
+			<Footer />
+
+		</>
 	)
 }
 

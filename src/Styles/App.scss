@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+--porcelain: #e2e7ea;
+--chathams-blue: #1a4a89;
+--danube: #81aedb;
+--bermuda-gray: #7487a7;
+--waikawa-gray: #5c6b8c;
+--thunder: #363536;
+--danube: #79a1d8;
+--rhino: #2d425c;
+--hurricane: #948488;
+}
+
+.App{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
