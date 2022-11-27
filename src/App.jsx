@@ -4,10 +4,8 @@ import './components/Navbar/navbar.scss'
 function App() {
 	return (
 		<div className='App'>
-			<div className='styles'>
-				<div>
-					<Navbar />	
-				</div>
+			<div className='navContainer'>
+				<Navbar />	
 			</div>
 		</div>
 	)
