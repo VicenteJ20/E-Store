@@ -1,9 +1,8 @@
-
-import { Navbar, } from './components'
+import { Navbar } from './components'
 import './components/Navbar/navbar.scss'
 
 import React from 'react'
-import { Carousel } from './components/Carousel/carousel'
+import Carousel from './components/Carousel/carousel'
 import './Styles/App.scss'
 
 function App() {
@@ -11,7 +10,7 @@ function App() {
 		<>
 			<div className='App'>
 			<div className='navContainer'>
-				<Navbar />	
+				<Navbar />
 			</div>
 		 		<Carousel />
 			</div>
