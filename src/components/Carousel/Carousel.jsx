@@ -7,14 +7,17 @@ import '../../Styles/Carousel.scss'
 
 const DotBtn = ({ id, active, handler }) => {
 	return (
-		<li className={`dot ${active === id ? 'active' : ''}`} onClick={handler}>
-			{id}
-		</li>
+		<li className={`dot ${active === id ? 'active' : ''}`} onClick={handler}></li>
 	)
 }
 
 const Carousel = () => {
-	const [active, setActive] = useState()
+	const [active, setActive] = useState(0)
+	const totalData = Object.keys(Imgs).length
+
+	const moveCarousel = {
+		transform: `translateX(${active * -33}%)`
+	}
 
 	const btnClick = (id) => {
 		setActive(id)
@@ -22,7 +25,7 @@ const Carousel = () => {
 
 	return (
 		<div className='Carousel'>
-			<div className='CarouselImgs'>
+			<div className='CarouselImgs' style={moveCarousel}>
 				{Imgs.map((x, index) => (
 					<Image key={index} src={x.URL} alt={x.Alt} />
 				))}
@@ -36,6 +39,9 @@ const Carousel = () => {
 						handler={() => btnClick(x.Id)}
 					/>
 				))}
+				{
+					console.log(totalData)
+				}
 			</ul>
 		</div>
 	)

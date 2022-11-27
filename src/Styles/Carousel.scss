@@ -1,8 +1,9 @@
 .Carousel{
   width: 90%;
   max-width: 120em;
-  padding: 2em;
+  padding: 0 2em;
   overflow: hidden;
+  position: relative;
 }
 
 .Carousel .CarouselImgs{
@@ -13,7 +14,7 @@
   align-items: center;
   padding: 2em;
   transition: 0.5s all ease-in-out;
-  transform: translateX(0%);
+  transform: translate(0%);
   gap: 0.5rem;
 }
 
@@ -33,18 +34,20 @@
   justify-content: center;
   align-items: center;
   list-style: none;
+  position: absolute;
+  bottom: 3rem;
 }
 
 .Carousel .dot{
-  width: 2em;
-  height: 2em;
+  width: 1.5em;
+  height: 1.5em;
   margin: 1em 1em 0;
   border-radius: 50%;
   cursor: pointer;
-  background-color: red;
+  background-color: var(--standard-grey);
   transition: 0.5s all ease;
 }
 
 .dot.active{
-  background-color: green;
+  background-color: var(--active-light-blue);
 }
