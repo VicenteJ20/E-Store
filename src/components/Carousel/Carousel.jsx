@@ -13,7 +13,6 @@ const DotBtn = ({ id, active, handler }) => {
 
 const Carousel = () => {
 	const [active, setActive] = useState(0)
-	const totalData = Object.keys(Imgs).length
 
 	const moveCarousel = {
 		transform: `translateX(${active * -33}%)`
@@ -33,16 +32,9 @@ const Carousel = () => {
 			</div>
 			<ul className='CarouselDots'>
 				{Imgs.map((x) => (
-					<DotBtn
-						key={x.Id}
-						id={x.Id}
-						active={active}
-						handler={() => btnClick(x.Id)}
+					<DotBtn key={x.Id} id={x.Id} active={active} handler={() => btnClick(x.Id)}
 					/>
 				))}
-				{
-					console.log(totalData)
-				}
 			</ul>
 		</div>
 	)
