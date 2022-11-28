@@ -1,27 +1,24 @@
 .Carousel{
-  width: 90%;
-  max-width: 120em;
-  padding: 0 2em;
+  width: 100%;
+  max-width: 100vw;
+  padding: 0 2rem;
   overflow: hidden;
   position: relative;
 }
 
 .Carousel .CarouselImgs{
-  width: 300%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 2em;
   transition: 0.5s all ease-in-out;
   transform: translate(0%);
   gap: 0.5rem;
 }
 
 .CarouselImgs .img{
-  width: calc(100% / 3);
   min-height: 20vh;
-  max-height: 75vh;
+  max-height: 80vh;
   border-radius: 1rem;
 }
 
