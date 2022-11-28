@@ -2,5 +2,5 @@
 import React from "react"
 
 export const Image = ({ ...props }) => {
-  return <img src={props.src} alt={props.alt} className='img' />
+  return <img src={props.src} alt={props.alt} className='img' style={{width: `calc(100% / ${props.totalObjects})`}} />
 }
