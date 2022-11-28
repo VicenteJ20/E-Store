@@ -14,7 +14,6 @@ function App() {
 				<Carousel />
 			</div>
 			<Footer />
-
 		</>
 	)
 }
