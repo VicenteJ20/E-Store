@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../Styles/reset.scss'
 import './Footer.scss'
+import {BsCashCoin} from 'react-icons/bs'
 
 const Footer = () => {
     return(
@@ -13,6 +14,7 @@ const Footer = () => {
                     </div>
 
                     <h1 className='description_payments title'>Formas de pago disponibles</h1>
+                    <BsCashCoin />
                 </div>
 
                 <div className='about box'>
