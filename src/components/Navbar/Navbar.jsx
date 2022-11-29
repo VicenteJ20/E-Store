@@ -3,7 +3,7 @@ import { navLinks } from '../../constants'
 import './navbar.scss'
 import { RiUserLine } from 'react-icons/ri'
 import { BsCartPlus } from 'react-icons/bs'
-import SearchBar from './SearchBar'
+import SearchBar from './SearchBar/SearchBar'
 
 const Navbar = () => {
 	return (

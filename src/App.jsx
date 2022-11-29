@@ -1,7 +1,7 @@
 import { Navbar } from './components'
-import './components/Navbar/navbar.scss'
 import Carousel from './components/Carousel/carousel'
 import './Styles/App.scss'
+import Footer from './components/Footer/Footer'
 
 function App() {
 	return (

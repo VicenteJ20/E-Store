@@ -1,7 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+:root{
+  --standard-grey: #d9d9d9;
+  --active-light-blue: #0188D4;
+}
+
+:root{
+--porcelain: #e2e7ea;
+--chathams-blue: #1a4a89;
+--danube: #81aedb;
+--bermuda-gray: #7487a7;
+--waikawa-gray: #5c6b8c;
+--thunder: #363536;
+--danube: #79a1d8;
+--rhino: #2d425c;
+--hurricane: #948488;
 }
 
 .App{
