@@ -1,0 +1,20 @@
+.navbar__input__wrapper {
+	position: relative;
+}
+
+.navbar__input {
+	width: 14rem;
+	height: 1.25rem;
+	background: #f7f7f7;
+	border-radius: 10px;
+	border-color: transparent;
+}
+
+.navbar__input__icon {
+	position: absolute;
+	width: 1rem;
+	height: 1rem;
+	right: 4px;
+	top: 50%;
+	transform: translateY(-50%);
+}
