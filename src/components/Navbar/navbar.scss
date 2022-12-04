@@ -1,12 +1,9 @@
-.navContainer{
-    display: flex;
-    margin-bottom: 1rem;
-}
-
 .navbar {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin: 1rem 0;
+    padding: 0 1.5rem;
 }
 
 .navbar__left{
@@ -25,7 +22,7 @@
 }
 
 .navbar__cartIcon__icon{
-    margin: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .navbar__cartIcon__title{
@@ -43,7 +40,6 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    margin: 0.5rem;
 }
 
 .navbar__profileIcon{
@@ -53,7 +49,7 @@
 }
 
 .navbar__profileIcon__icon{
-    margin: 0.5rem;
+    margin: 0 0.5rem;
 }
 
 .navbar__shoppingCartIcon{
@@ -63,7 +59,7 @@
 }
 
 .navbar__shoppingCartIcon__icon{
-    margin: 0.5rem;
+    margin: 0 0.5rem;
 }
 
 .navbar__icon__title{
@@ -94,7 +90,7 @@
 
 .navbar__navitems{
     text-decoration: none;
-    margin: 1rem;
+    margin: 0 1rem;
 }
 
 .navbar__input__wrapper{

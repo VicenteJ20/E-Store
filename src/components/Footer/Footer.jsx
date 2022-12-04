@@ -1,20 +1,34 @@
 import React from 'react'
 import '../../Styles/reset.scss'
+import '../../Styles/app.scss'
 import './Footer.scss'
-import {BsCashCoin} from 'react-icons/bs'
+import {BsCashCoin, BsPhone} from 'react-icons/bs'
+import {CiShoppingCart} from 'react-icons/ci'
+import {AiOutlineCopyrightCircle} from 'react-icons/ai'
+import {FaMoneyCheckAlt} from 'react-icons/fa'
+
 
 const Footer = () => {
     return(
         <section className='section1'>
-            <div className="boxes">
+            <div className='boxes'>
                 <div className='description box'>
-                    <div className="description_M-Store">
-                        <h1 className='description_M-Store_h1 title'>M-Store</h1>
+                    <div className='description_M-Store'>
+                        <div className='description_M-Store_title'>
+                            <CiShoppingCart className='description_M-Store_icon' />
+                            <h1 className='description_M-Store_h1 title'>M-Store</h1>
+                        </div>
                         <p className='description_M-Store_p'>M-Store, disfruta de los mejores productos a solo un clic de distancia.</p>
                     </div>
 
-                    <h1 className='description_payments title'>Formas de pago disponibles</h1>
-                    <BsCashCoin />
+                    <div className='payments'>
+                    <h1 className='payments_title title'>Formas de pago disponibles</h1>
+                    <div className='payments_icons'>
+                        <BsCashCoin className='payment_icon' />
+                        <BsPhone className='payment_icon' />
+                        <FaMoneyCheckAlt className='payment_icon' />
+                    </div>
+                    </div>
                 </div>
 
                 <div className='about box'>
@@ -52,7 +66,14 @@ const Footer = () => {
             </div>
 
             <div className='author'>
-                <span className='author_span'>Diseñado por Vicente Jorquera. Desarrollado por Vicente Jorquera, Catalina Zapata, Gaston, Diego, David.</span>
+                <AiOutlineCopyrightCircle className='author_icon' />
+                <span className='author_span'>Diseñado por Vicente Jorquera. Desarrollado por 
+                <a href='https://vicente-jorquera.netlify.app' className='a'> Vicente Jorquera,</a>
+                <a href='www.linkedin.com/in/catalina-zapata' className='a'> Catalina Zapata,</a>
+                <a href='#' className='a'> Gastón Portillo,</a>
+                <a href='#' className='a'> Diego Papa,</a>
+                <a href='#' className='a'> David Velasquez.</a>
+                </span>
             </div>
         </section>
 
