@@ -9,7 +9,7 @@ export const navLinks = [
         title: "Categorías",
     },
     {
-        id: "delivery",
-        title: "Delivery",
+        id: "Sobre_Nosotros",
+        title: "Sobre Nosotros",
     },
 ]

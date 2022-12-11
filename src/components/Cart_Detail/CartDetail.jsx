@@ -3,10 +3,21 @@ import React from 'react'
 import '../../Styles/reset.scss'
 import './CartDetail.scss'
 
+import { useNavigate } from "react-router-dom"
+
+
 const Cart_Detail = () => {
+
+    const navigate = useNavigate()
+
+    const btn__productos = () => {
+        navigate("/")
+    }
+
+
     return(
 
-        <div class="container">
+        <div className="container">
 
             <h1>Carrito de compras</h1>
             <hr></hr>
@@ -55,22 +66,24 @@ const Cart_Detail = () => {
                 </td>
                 <td className="font-weight-bold">$ <span>210.000</span></td>
 
+
+                {/*
+                <tfoot>
+                    <tr id="footer">
+                    <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                    </tr>
+                </tfoot>
+                
+                */}
+                <br></br><br></br><br></br>
+                <hr></hr>
+                <button onClick={btn__productos}>Agregar más productos</button>
+
             </table>
 
         </div>
         
     )
 }
-
-/* 
-Va dentro de table cuando no hay items. Pero no me deja comentar código dentro del return
-<tfoot>
-    <tr id="footer">
-    <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
-    </tr>
-</tfoot>
-
-*/
-
 
 export default Cart_Detail

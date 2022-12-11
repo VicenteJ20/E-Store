@@ -39,7 +39,7 @@ const Carousel = () => {
 				))}
 			</ul>
 			{
-				console.log(100 * totalObjects)
+				//console.log(100 * totalObjects)
 			}
 		</div>
 	)

@@ -5,6 +5,8 @@ import { RiUserLine } from 'react-icons/ri'
 import { BsCartPlus } from 'react-icons/bs'
 import SearchBar from './SearchBar/SearchBar'
 
+import { NavLink } from 'react-router-dom'
+
 const Navbar = () => {
 	return (
 		<nav className='navbar'>
@@ -23,6 +25,7 @@ const Navbar = () => {
 						<li key={nav.id}>
 							<a className='navbar__navitems' href='#'>
 								{nav.title}
+								{console.log(nav.id)}
 							</a>
 						</li>
 					))}
@@ -34,17 +37,21 @@ const Navbar = () => {
 					<i className='navbar__profileIcon__icon'>
 						<RiUserLine />
 					</i>
-					<a className='navbar__icon__title' href='#'>
-						Cuenta
-					</a>
+
+					<div className='navbar__icon__title'>
+						<NavLink className={({isActive}) => isActive ? console.log("Activado") : console.log("Desactivado")} to='/Account'>Cuenta</NavLink>
+					</div>
+
 				</div>
 				<div className='navbar__shoppingCartIcon'>
 					<i className='navbar__shoppingCartIcon__icon'>
 						<BsCartPlus />
 					</i>
-					<a className='navbar__icon__title' href='#'>
-						Carrito
-					</a>
+
+					<div className='navbar__icon__title'>
+						<NavLink to='/CartDetail'>Carrito</NavLink>
+					</div>
+
 				</div>
 			</div>
 		</nav>
